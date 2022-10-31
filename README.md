@@ -11,4 +11,10 @@ O primeiro passo para a realização da atividade proposta pelo professor Abrant
 >Explicando um pouco mais à fundo dobre as ferramentas comentadas:
 ### Git
 
+-Comandos básicos:
+
+-Dificuldades:
+
 ### GitHub
+
+_dificuldades:
