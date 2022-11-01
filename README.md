@@ -8,9 +8,8 @@ Dentro deste subdiretório está disponível a documentação referente à reali
 ## Inicio do processo
 O primeiro passo para a realização da atividade proposta pelo professor Abrantes, é o apreendizado sobre o _Version Control System (VCS)_ **Git** + a plataforma de hospedagem de códigos-fonte **GitHub**, utilizados amplamente por profissionais da tecnologia para o gerenciamento e controle das versões de um projeto. O uso dessas ferramentas se torna indispenável para aqueles que desejam gerir projetos e manter o controle sobre os mesmos, possuindo diversas funcionalidades e ferramentas que auxiliam ao desenvolver um software ou aplicação web por exemplo.
 
->Explicando um pouco mais à fundo dobre as ferramentas comentadas:
+>Explicando um pouco mais à fundo sobre as ferramentas comentadas:
 ### Git
-
 -Comandos básicos:
 
 -Dificuldades:
@@ -18,3 +17,6 @@ O primeiro passo para a realização da atividade proposta pelo professor Abrant
 ### GitHub
 
 _dificuldades:
+
+
+## Iniciando a construção no projeto lógico o software sql power architect
