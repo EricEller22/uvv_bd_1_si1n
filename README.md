@@ -26,4 +26,17 @@ Como mencionado pelo porfessor o exemplo de modelo lógico oferecido para os alu
 
 -Da tabela regioes para a tabela paises; Na tabela paises a coluna em que se encontra a chave estrangeira vinda da tabela regioes, é apresentada com dados inconsistentes, uma vez que na tabela regioes a coluna id_regiao que por definição é sua Primary key apresenta atributos INTEGER e NOT NULL, o que também teria que ser replicado à sua chave estrangeira na tabela paises que não apresenta os mesmos atributos, apenas INTEGER ausentado o atributo NOT NULL.
 
+-Da tabela pais para a tabela localizacoes; Na tabela pais a coluna definidade como sua Primary Key(PK) id_pais possui atributos CHAR(2) e NOT NULL, no entanto este mesmo campo referenciado na tabela localizacoes com uma foreign key(FK), não possui o mesmo atributo NOT NULL, consfigurando erro.
+
+-Da tabela localizacao para a tabela departamento; A primary key (PK) presente na tabela localizacao (id_localizacao) é referenciada na tabela departamento como uma chave estrangeira, no entanto nesta tabela ela não possui o atributo NOT NULL que o mesmo campo possui na sua tabela de origem, configurando erro.
+
+-O mesmo ocorre da tabela departamento para a tabela empregado; Onde a chave primaria da tabela departamento (id_departamento) é referenciada na tabela empregado sem o atributo NOT NULL.
+
+-A tabela departamento possui uma Chave estrangeira(FK) no campo id_gerente, porem este campo não faz referência a nenhuma outra coluna de nenhuma outra tabela, dentro do projeto lógico.
+
+-Na tabela empregados; a coluna id_supervisor está presente na tabela como uma chave estrangeira(FK), porém ela não faz referência à nenhuma outra coluna de nenhuma outra tabela. E ainda possui logo abaixo da tabela uma cardinalidade ligando a caluna nela mesma.
+
+-No projeto lógico disponibilado pelo professor abrantes, da tabela empregados para a tabela departamentos há uma cardinalidade de 1:N respectivamente, entretanto a PK da tabela empregados(id_empregado) não está referenciada em nenhuma outra coluna presente na tabela departamentos. A partir dessa análise é possivel observar o erro recorrente.
+
+-Na tabela historico_cargos a coluna id_cargo definidade como uma chave estrangeira(FK) vinda da tabela de cargos possui atributo _varchar_ diferente de sua coluna de origem na tabela cargos que é _varchar(10)_
 
