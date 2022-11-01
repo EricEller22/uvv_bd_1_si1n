@@ -19,4 +19,11 @@ O primeiro passo para a realização da atividade proposta pelo professor Abrant
 _dificuldades:
 
 
-## Iniciando a construção no projeto lógico o software sql power architect
+## Iniciando a construção do projeto lógico o software sql power architect
+
+### Erros identificados:
+Como mencionado pelo porfessor o exemplo de modelo lógico oferecido para os alunos replicarem no sql power architect foi construido contendo alguns erros propositais, feitos justamente para o professor avaliar nossa compreensão e capacidade sobre resolução de problemas.
+
+-Da tabela regioes para a tabela paises; Na tabela paises a coluna em que se encontra a chave estrangeira vinda da tabela regioes, é apresentada com dados inconsistentes, uma vez que na tabela regioes a coluna id_regiao que por definição é sua Primary key apresenta atributos INTEGER e NOT NULL, o que também teria que ser replicado à sua chave estrangeira na tabela paises que não apresenta os mesmos atributos, apenas INTEGER ausentado o atributo NOT NULL.
+
+
