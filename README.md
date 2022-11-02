@@ -40,3 +40,9 @@ Como mencionado pelo porfessor o exemplo de modelo lógico oferecido para os alu
 
 -Na tabela historico_cargos a coluna id_cargo definidade como uma chave estrangeira(FK) vinda da tabela de cargos possui atributo _varchar_ diferente de sua coluna de origem na tabela cargos que é _varchar(10)_
 
+--Cardinalidade entre a tabela de empregados e a tabela de histórico_cargos; No modelo disponibilizado a cardinalidade entre as duas aparece como não identificada quando correto seria identificada, uma vez que o histórico de cargos necessita de um empregado para existir.
+
+
+### Auto relacionamento de uma tabela: Elemento presente no modelo lógico de referência, cujo caracteristicas eram desconhecidas, fazendo com que buscasse informações sobre
+
+### Ao inciar o processo de construção do projeto lógico, me deparo com um elemento ainda não estudado em sala de aula, as Alternate Key(AK)
