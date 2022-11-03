@@ -2,17 +2,21 @@
 ## Aluno: Eric Andrade Eller 
 ## Profº: Abrantes Araújo Silva Filho
 
-Dentro deste subdiretório está disponível a documentação referente à realização do Pset-1 da disciplina de Design e Desenvolvimento de banco de dados.
+    Dentro deste subdiretório está disponível a documentação referente ao desenvolvimento do Pset-1 da disciplina de Design e Desenvolvimento de banco de dados.
 
 
 ## Inicio do processo
-O primeiro passo para a realização da atividade proposta pelo professor Abrantes, é o apreendizado sobre o _Version Control System (VCS)_ **Git** + a plataforma de hospedagem de códigos-fonte **GitHub**, utilizados amplamente por profissionais da tecnologia para o gerenciamento e controle das versões de um projeto. O uso dessas ferramentas se torna indispenável para aqueles que desejam gerir projetos e manter o controle sobre os mesmos, possuindo diversas funcionalidades e ferramentas que auxiliam ao desenvolver um software ou aplicação web por exemplo.
+    O primeiro passo para a realização da atividade proposta pelo professor Abrantes, é o apreendizado sobre o _Version Control System (VCS)_ **Git** + a plataforma de hospedagem de códigos-fonte **GitHub**, utilizados amplamente por profissionais da tecnologia para o gerenciamento e controle das versões de um projeto. O uso dessas ferramentas se torna indispenável para aqueles que desejam gerir projetos e manter o controle sobre os mesmos, possuindo diversas funcionalidades e ferramentas que auxiliam ao desenvolver um software ou aplicação web por exemplo.
 
 >Explicando um pouco mais à fundo sobre as ferramentas comentadas:
 ### Git
--Comandos básicos:
+    Como já mencionado GIT se trata de um sistema de controle de versões, um software utilizado para gerenciar e administrar ad diferentes versões de um projeto ao decorrer de seu desenvolvimento. Este sistema é de suma importância, pois atravéz dele é possivel criar, editar, salvar e revisar os arquivos de um projeto, seja um código fonte ou até mesmo esta documentação que você está lendo.
 
--Dificuldades:
+    Iniciando os estudos sobre o GIT através de uma série de artigos online e de videos aulas, já é possivel começar a usar o software. Seja atravéz de uma interface gráfica que é mais simplificada, ou até mesmo pelo GIT BASH a linha de comando do GIT, que na minha particular opinião é bem mais fácil de ser utilizada, necessitando apenas de um estudo mais profundo, mas que trará diversas facilidades ao longo prazo utilizando-o.
+
+- Dificuldades: Para os iniciantes que começaram a utilizar este sistema a um curto periodo de tempo, uma das principais dificuldade é entender como o GIT funciona na prática e como operá-lo de forma funcional, quais comandos utilizar, como criar um repositório GIT e principalmente como utilizar o GIT para editar, salvar e consultar as diferentes versões do seu projeto. Essas são duvidas frequentemente geradas, mas que com um pequeno esforço de estudo e pesquisa conseguem ser sanadas.
+
+[Sugestão de um curso sobre o sistema de controle de versão GIT][def]
 
 ### GitHub
 
@@ -50,3 +54,5 @@ O mesmo ocorre da tabela paises para a tabela de localizações, sendo este rela
 ### Auto relacionamento de uma tabela: Elemento presente no modelo lógico de referência, cujo caracteristicas eram desconhecidas, fazendo com que buscasse informações sobre
 
 ### Ao inciar o processo de construção do projeto lógico, me deparo com um elemento ainda não estudado em sala de aula, as Alternate Key(AK)
+
+[def]: https://youtube.com/playlist?list=PLucm8g_ezqNq0dOgug6paAkH0AQSJPlIe
