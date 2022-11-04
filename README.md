@@ -27,7 +27,7 @@ Diferentemente do Git o GitHub não necessita de conhecimento prévio para ser u
 
 >Git e GitHub são duas ferramentas bastante utilizadas no mundo da computação e também serão usadas para o desenvolvimento do Pset1 proposto pelo professor Abrantes. Através delas que serão criados os scripts em linguagem sql, demonstrando a implementação do banco de dados Hr aos SGBDs Postgresql e MySQL.
 
-## Iniciando a construção do projeto lógico o software sql power architect
+## Construção do projeto lógico o software sql power architect
 
 ### Erros identificados:
 Como mencionado pelo porfessor o exemplo de modelo lógico oferecido para os alunos replicarem no sql power architect foi construido contendo alguns erros propositais, feitos justamente para o professor avaliar nossa compreensão e capacidade sobre resolução de problemas.
@@ -58,3 +58,7 @@ O mesmo ocorre da tabela paises para a tabela de localizações, sendo este rela
 ### Auto relacionamento de uma tabela: Elemento presente no modelo lógico de referência, cujo caracteristicas eram desconhecidas, fazendo com que buscasse informações sobre
 
 ### Ao inciar o processo de construção do projeto lógico, me deparo com um elemento ainda não estudado em sala de aula, as Alternate Key(AK)
+
+
+
+. Postgres oferece mais funcionalidades e uma melhor organização para o ambiente corporativo.
