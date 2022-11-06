@@ -55,9 +55,9 @@ Como mencionado pelo porfessor o exemplo de modelo lógico oferecido para os alu
 O mesmo ocorre da tabela paises para a tabela de localizações, sendo este relacionamento lido da seguinte forme: 1 pais possui 0,1,2,3 ou mais localizações, porém também está incorreto pois um pais possui obrigatoriamente diversas regiões, sendo o relacionamento correto: 1 pais possui 1,2,3 ou mais localizações.
 
 
-### Auto relacionamento de uma tabela: Elemento presente no modelo lógico de referência, cujo caracteristicas eram desconhecidas, fazendo com que buscasse informações sobre
+## Auto relacionamento de uma tabela: Elemento presente no modelo lógico de referência, cujo caracteristicas eram desconhecidas, fazendo com que buscasse informações sobre
 
-### Ao inciar o processo de construção do projeto lógico, me deparo com um elemento ainda não estudado em sala de aula, as Alternate Key(AK)
+## Ao inciar o processo de construção do projeto lógico, me deparo com um elemento ainda não estudado em sala de aula, as Alternate Key(AK)
 
 
 
