@@ -28,9 +28,13 @@ Diferentemente do Git o GitHub não necessita de conhecimento prévio para ser u
 >Git e GitHub são duas ferramentas bastante utilizadas no mundo da computação e também serão usadas para o desenvolvimento do Pset1 proposto pelo professor Abrantes. Através delas que serão criados os scripts em linguagem sql, demonstrando a implementação do banco de dados Hr aos SGBDs Postgresql e MySQL.
 
 ## Construção do projeto lógico o software sql power architect
+Para implementar qualquer banco de dados à um sgbd, é necessário uma série de etapas para a construção de um modelo sólido e íntegro, pois só assim, através de etapas como a contrução de  projetos conceituais e lógicos obteremos um banco de dados funcional, inibindo o máximo possivel de erros que possam a vir comprometer a estrutura do projeto já aplicado. Com isso, um projeto lógico bem construido resultada diretamente em um banco de dados funcional, e é justamente esse objetivo proposto eplo Profº Abrantes, ao instruir a replicagem de um modelo lógico pré existente, de forma a corrigir erros presentes e aprender sobre a ferramenta para a construção de projetos lógicos SQL PowerArchtect, muito utilizada por profissionais da área.
+
+### SQL PowerArchtect
+Essa ferramenta para a modelagem lógica dos dados, apresenta interface simples e intuitiva para a construção dos projetos, de forma que uma pessoa iniciante assim como eu, em poucas horas utilizando-a consiga facilmente desenvolver um projeto completo explorando todas as ferramentas e recursos disponibilizados. Criar tabelas, colunas, relacionamentos, definir cardinalidades e restrições, são apenas alguns dos recursos que você certamente irá utilizar ao desenvolver um projeto, e que estão presentes no PowerArchtect configurando-se como uma ferramenta bem completa.  
 
 ### Erros identificados:
-Como mencionado pelo porfessor o exemplo de modelo lógico oferecido para os alunos replicarem no sql power architect foi construido contendo alguns erros propositais, feitos justamente para o professor avaliar nossa compreensão e capacidade sobre resolução de problemas.
+Como mencionado pelo porfessor o exemplo de modelo lógico oferecido para os alunos replicarem no sql power architect foi construido contendo alguns erros propositais, feitos justamente para o professor avaliar nossa compreensão e capacidade sobre resolução de problemas. Ao replicar o modelo lógico pré existente, consegui notar a existência dos seguintes erros:
 
 - Da tabela regioes para a tabela paises; Na tabela paises a coluna em que se encontra a chave estrangeira vinda da tabela regioes, é apresentada com dados inconsistentes, uma vez que na tabela regioes a coluna id_regiao que por definição é sua Primary key apresenta atributos INTEGER e NOT NULL, o que também teria que ser replicado à sua chave estrangeira na tabela paises que não apresenta os mesmos atributos, apenas INTEGER ausentado o atributo NOT NULL.
 
@@ -54,6 +58,7 @@ Como mencionado pelo porfessor o exemplo de modelo lógico oferecido para os alu
 - As cardinalidades de regioes para paises e de paises para localizações; A tabela regiões para a tabela paises o relacionamento é lido de forma que 1 regiao pode possuir 0,1,2,3 ou mais paises, porém uma região não pode ser composta por nenhum pais(0), então o correto relacionamento seria 1 região possui 1,2,3 ou mais paises. 
 O mesmo ocorre da tabela paises para a tabela de localizações, sendo este relacionamento lido da seguinte forme: 1 pais possui 0,1,2,3 ou mais localizações, porém também está incorreto pois um pais possui obrigatoriamente diversas regiões, sendo o relacionamento correto: 1 pais possui 1,2,3 ou mais localizações.
 
+No entanto estes erros de forma relativamente simples foram corrigidos, mantendo a integridade do projeto lógico. 
 
 ## Auto relacionamento de uma tabela: Elemento presente no modelo lógico de referência, cujo caracteristicas eram desconhecidas, fazendo com que buscasse informações sobre
 
