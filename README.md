@@ -60,10 +60,10 @@ O mesmo ocorre da tabela paises para a tabela de localizações, sendo este rela
 
 No entanto estes erros de forma relativamente simples foram corrigidos, mantendo a integridade do projeto lógico. 
 
-## Auto relacionamento de uma tabela: Elemento presente no modelo lógico de referência, cujo caracteristicas eram desconhecidas, fazendo com que buscasse informações sobre
+### Auto relacionamento de uma tabela: Elemento presente no modelo lógico de referência, cujo caracteristicas eram desconhecidas, fazendo com que buscasse informações sobre
 
-## Ao inciar o processo de construção do projeto lógico, me deparo com um elemento ainda não estudado em sala de aula, as Alternate Key(AK)
-
-
+### Ao inciar o processo de construção do projeto lógico, me deparo com um elemento ainda não estudado em sala de aula, as Alternate Key(AK)
 
 . Postgres oferece mais funcionalidades e uma melhor organização para o ambiente corporativo.
+
+## Iniciando a criação do Script em SQL para implementar o modelo lógico construido aos SGBDs Postgresql e MySql
