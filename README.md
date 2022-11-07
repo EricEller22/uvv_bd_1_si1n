@@ -66,4 +66,4 @@ No entanto estes erros de forma relativamente simples foram corrigidos, mantendo
 
 . Postgres oferece mais funcionalidades e uma melhor organização para o ambiente corporativo.
 
-## Iniciando a criação do Script em SQL para implementar o modelo lógico construido aos SGBDs Postgresql e MySql
+## Iniciando a criação do Script em SQL para implementar o modelo lógico construido aos SGBDs Postgresql e MySqls
