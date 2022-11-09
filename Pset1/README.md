@@ -87,7 +87,7 @@ USE uvv;
 
 ~~~sql
 \c uvv;
-~~~s
+~~~
 
 
 ### Implementando ao MySql
