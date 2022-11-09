@@ -40,7 +40,7 @@ Para implementar qualquer banco de dados à um sgbd, é necessário uma série d
 
 ### SQL PowerArchtect
 Essa ferramenta para a modelagem lógica dos dados, apresenta interface simples e intuitiva para a construção dos projetos, de forma que uma pessoa iniciante assim como eu, em poucas horas utilizando-a consiga facilmente desenvolver um projeto completo explorando todas as ferramentas e recursos disponibilizados. Criar tabelas, colunas, relacionamentos, definir cardinalidades e restrições, são apenas alguns dos recursos que você certamente irá utilizar ao desenvolver um projeto, e que estão presentes no PowerArchtect configurando-se como uma ferramenta bem completa.  
-
+ 
 ### Erros identificados:
 Como mencionado pelo porfessor o exemplo de modelo lógico oferecido para os alunos replicarem no sql power architect foi construido contendo alguns erros propositais, feitos justamente para o professor avaliar nossa compreensão e capacidade sobre resolução de problemas. Ao replicar o modelo lógico pré existente, consegui notar a existência dos seguintes erros:
 
@@ -59,6 +59,7 @@ O mesmo ocorre da tabela paises para a tabela de localizações, sendo este rela
 
 >No entanto estes erros de forma relativamente simples foram corrigidos, mantendo a integridade do projeto lógico. 
 
+
 ### Novos conceitos aprendidos:
 Ao realizar a modelagem do projeto lógico, me deparei com uma série de elementos e conceitos anteriormente desconhecidos e que consequentemente me forçaram a aprender e entender sobre eles, de forma a consultar documentos, video-aulas e diversos blogs, afim de sanar as mais diversas dúvidas recorrentes, com por exemplos sobre os seguintes elementos:
 
@@ -68,7 +69,30 @@ Ao realizar a modelagem do projeto lógico, me deparei com uma série de element
 
 - __Tipos de relacionamento:__ Relacionamento identificado expressa uma relação entre tabelas, onde a chave estrangeira faz parte da chave primária daquela tabela, ou seja, faz parte da identificação da mesma gerando uma chave primária composta(PFK), enquanto o Relacionamento não-identificado não faz parte de uma chave primária.
 
-## Iniciando a criação do Script em SQL para implementar o modelo lógico construido aos SGBDs Postgresql e MySqls
+
+## Iniciando a criação do Script em SQL para implementar o modelo lógico construido aos SGBDs Postgresql e MySql
+Após criar, editar e finalizar o projeto lógico iniciei a criação do script para implementar o banco de dados hr, primeiramente ao SGBD Postgresql e posteriormente ao SGBD MySql. 
+
+### Implementando ao Postgresql
+O primeiro passo ao iniciar a criação do script foi verificar a documentação do Postgres buscando entender a forma como o sgbd funciona e opera, pois não possuia conhecimento prévio sobre o mesmo. Ao estudar o postgres notei que, esse se trata de um dos SGBDs mais completo para produtividade disponiveis hoje em dia, apresentando funções e recursos voltados para um melhor gerenciamento dos bancos de dados, possibilitando administrar permissões, papéis, usuário e diversos outros elementos. 
+No entanto, o postgres apresenta certa complexidade para ser utilizado, uma vez que, diversas funções padrões do SQL são modificadas para atender à comandos exclusivos do postgres, como por exemplo para selecionar um banco de dados:
+
+* No MySql:
+
+~~~sql
+USE uvv;
+~~~
+
+* No Postgres:
+
+~~~sql
+\c uvv;
+~~~s
+
+
+### Implementando ao MySql
+
+
 
 . Postgres oferece mais funcionalidades e uma melhor organização para o ambiente corporativo.
 
