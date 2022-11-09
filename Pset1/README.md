@@ -25,10 +25,18 @@ Para os mais leigos GitHub pode ser a mesma coisa que o GIT, porém não é bem 
 
 Diferentemente do Git o GitHub não necessita de conhecimento prévio para ser utilizado, uma vez que sua interface é apresentada de forma bem intuiva e minimalista, disponibilizando apenas o necessário para seus usuários utilizarem-o. No entanto, se você possui familiaridade com a lingua inglesa(O que não é o meu caso) você tera ainda mais facilidades ao utilizar o GitHub, mas não só ele, qualquer outro software proporciona entendimento facilitado perante ao prévio entendimento do Inglês.
 
->Git e GitHub são duas ferramentas bastante utilizadas no mundo da computação e também serão usadas para o desenvolvimento do Pset1 proposto pelo professor Abrantes. Através delas que serão criados os scripts em linguagem sql, demonstrando a implementação do banco de dados Hr aos SGBDs Postgresql e MySQL.
+### MakDown
+MarkDown se trata de um linguagem de marcação de texto puro, criada principalmente para proporcionar facil conversão dos seus documentos para html, uma vez que o markdown é baseado na própria sintaxe html, apresemtando elementos de conversão direta para a linguagem, como por emxemplo.
+
+- Em mardown: #, ##, ### ...
+- Em Html: H1, H2, H3 ...
+
+
+>Git e GitHub e linguagem MarkDown são ferramentas bastante utilizadas no mundo da computação e também serão usadas para o desenvolvimento do Pset1 proposto pelo professor Abrantes. Através delas que serão criados todos os documentos e scripts em linguagem sql, demonstrando a implementação do banco de dados Hr aos SGBDs Postgresql e MySQL.
+
 
 ## Construção do projeto lógico o software sql power architect
-Para implementar qualquer banco de dados à um sgbd, é necessário uma série de etapas para a construção de um modelo sólido e íntegro, pois só assim, através de etapas como a contrução de  projetos conceituais e lógicos obteremos um banco de dados funcional, inibindo o máximo possivel de erros que possam a vir comprometer a estrutura do projeto já aplicado. Com isso, um projeto lógico bem construido resultada diretamente em um banco de dados funcional, e é justamente esse objetivo proposto eplo Profº Abrantes, ao instruir a replicagem de um modelo lógico pré existente, de forma a corrigir erros presentes e aprender sobre a ferramenta para a construção de projetos lógicos SQL PowerArchtect, muito utilizada por profissionais da área.
+Para implementar qualquer banco de dados à um sgbd, é necessário uma série de etapas para a construção de um modelo sólido e íntegro, pois só assim, através de etapas como a contrução de  projetos conceituais e lógicos obteremos um banco de dados funcional, inibindo o máximo possivel de erros que possam a vir comprometer a estrutura do projeto já aplicado. Com isso, um projeto lógico bem construido resultada diretamente em um banco de dados funcional, e é justamente esse objetivo proposto pelo Profº Abrantes, ao instruir a replicagem de um modelo lógico pré existente, de forma a corrigir erros presentes e aprender sobre a ferramenta para a construção de projetos lógicos SQL PowerArchtect, muito utilizada por profissionais da área.
 
 ### SQL PowerArchtect
 Essa ferramenta para a modelagem lógica dos dados, apresenta interface simples e intuitiva para a construção dos projetos, de forma que uma pessoa iniciante assim como eu, em poucas horas utilizando-a consiga facilmente desenvolver um projeto completo explorando todas as ferramentas e recursos disponibilizados. Criar tabelas, colunas, relacionamentos, definir cardinalidades e restrições, são apenas alguns dos recursos que você certamente irá utilizar ao desenvolver um projeto, e que estão presentes no PowerArchtect configurando-se como uma ferramenta bem completa.  
@@ -36,34 +44,31 @@ Essa ferramenta para a modelagem lógica dos dados, apresenta interface simples 
 ### Erros identificados:
 Como mencionado pelo porfessor o exemplo de modelo lógico oferecido para os alunos replicarem no sql power architect foi construido contendo alguns erros propositais, feitos justamente para o professor avaliar nossa compreensão e capacidade sobre resolução de problemas. Ao replicar o modelo lógico pré existente, consegui notar a existência dos seguintes erros:
 
-- Da tabela regioes para a tabela paises; Na tabela paises a coluna em que se encontra a chave estrangeira vinda da tabela regioes, é apresentada com dados inconsistentes, uma vez que na tabela regioes a coluna id_regiao que por definição é sua Primary key apresenta atributos INTEGER e NOT NULL, o que também teria que ser replicado à sua chave estrangeira na tabela paises que não apresenta os mesmos atributos, apenas INTEGER ausentado o atributo NOT NULL.
+* __Da tabela regioes para a tabela paises:__ Na tabela paises a coluna em que se encontra a chave estrangeira vinda da tabela regioes, é apresentada com dados inconsistentes, uma vez que na tabela regioes a coluna id_regiao que por definição é sua Primary key apresenta atributos INTEGER e NOT NULL, o que também teria que ser replicado à sua chave estrangeira na tabela paises que não apresenta os mesmos atributos, apenas INTEGER ausentado o atributo NOT NULL.
 
-- Da tabela pais para a tabela localizacoes; Na tabela pais a coluna definidade como sua Primary Key(PK) id_pais possui atributos CHAR(2) e NOT NULL, no entanto este mesmo campo referenciado na tabela localizacoes com uma foreign key(FK), não possui o mesmo atributo NOT NULL, consfigurando erro.
+* __Da tabela pais para a tabela localizacoes:__ Na tabela pais a coluna definidade como sua Primary Key(PK) id_pais possui atributos CHAR(2) e NOT NULL, no entanto este mesmo campo referenciado na tabela localizacoes com uma foreign key(FK), não possui o mesmo atributo NOT NULL, consfigurando erro.
 
-- Da tabela localizacao para a tabela departamento; A primary key (PK) presente na tabela localizacao (id_localizacao) é referenciada na tabela departamento como uma chave estrangeira, no entanto nesta tabela ela não possui o atributo NOT NULL que o mesmo campo possui na sua tabela de origem, configurando erro.
-
-- O mesmo ocorre da tabela departamento para a tabela empregado; Onde a chave primaria da tabela departamento (id_departamento) é referenciada na tabela empregado sem o atributo NOT NULL.
-
-- A tabela departamento possui uma Chave estrangeira(FK) no campo id_gerente, porem este campo não faz referência a nenhuma outra coluna de nenhuma outra tabela, dentro do projeto lógico.
-
-- Na tabela empregados; a coluna id_supervisor está presente na tabela como uma chave estrangeira(FK), porém ela não faz referência à nenhuma outra coluna de nenhuma outra tabela. E ainda possui logo abaixo da tabela uma cardinalidade ligando a caluna nela mesma.
-
-- No projeto lógico disponibilado pelo professor abrantes, da tabela empregados para a tabela departamentos há uma cardinalidade de 1:N respectivamente, entretanto a PK da tabela empregados(id_empregado) não está referenciada em nenhuma outra coluna presente na tabela departamentos. A partir dessa análise é possivel observar o erro recorrente.
-
--  Na tabela historico_cargos a coluna id_cargo definidade como uma chave estrangeira(FK) vinda da tabela de cargos possui atributo _varchar_ diferente de sua coluna de origem na tabela cargos que é _varchar(10)_
-
-- Cardinalidade entre a tabela de empregados e a tabela de histórico_cargos; No modelo disponibilizado a cardinalidade entre as duas aparece como não identificada quando correto seria identificada, uma vez que o histórico de cargos necessita de um empregado para existir.
-
-
-- As cardinalidades de regioes para paises e de paises para localizações; A tabela regiões para a tabela paises o relacionamento é lido de forma que 1 regiao pode possuir 0,1,2,3 ou mais paises, porém uma região não pode ser composta por nenhum pais(0), então o correto relacionamento seria 1 região possui 1,2,3 ou mais paises. 
+* __As cardinalidades de regioes para paises e de paises para localizações:__ A tabela regiões para a tabela paises o relacionamento é lido de forma que 1 regiao pode possuir 0,1,2,3 ou mais paises, porém uma região não pode ser composta por nenhum pais(0), então o correto relacionamento seria 1 região possui 1,2,3 ou mais paises. 
 O mesmo ocorre da tabela paises para a tabela de localizações, sendo este relacionamento lido da seguinte forme: 1 pais possui 0,1,2,3 ou mais localizações, porém também está incorreto pois um pais possui obrigatoriamente diversas regiões, sendo o relacionamento correto: 1 pais possui 1,2,3 ou mais localizações.
 
-No entanto estes erros de forma relativamente simples foram corrigidos, mantendo a integridade do projeto lógico. 
+* __Da tabela localizacao para a tabela departamento:__ A primary key (PK) presente na tabela localizacao (id_localizacao) é referenciada na tabela departamento como uma chave estrangeira, no entanto nesta tabela ela não possui o atributo NOT NULL que o mesmo campo possui na sua tabela de origem, configurando erro, uma vez que um departamento tem que estar associado a uma certa localização.
 
-### Auto relacionamento de uma tabela: Elemento presente no modelo lógico de referência, cujo caracteristicas eram desconhecidas, fazendo com que buscasse informações sobre
+-  __Na tabela historico_cargos:__ Na coluna id_cargo definidade como uma chave estrangeira(FK) vinda da tabela de cargos possui atributo _varchar_ diferente de sua coluna de origem na tabela cargos que é _varchar(10)_.
 
-### Ao inciar o processo de construção do projeto lógico, me deparo com um elemento ainda não estudado em sala de aula, as Alternate Key(AK)
+- __Cardinalidade entre a tabela de empregados e a tabela de histórico_cargos:__ No modelo disponibilizado a cardinalidade entre as duas aparece como não identificada quando correto seria identificada, uma vez que o histórico de cargos necessita de um empregado para existir.
+
+>No entanto estes erros de forma relativamente simples foram corrigidos, mantendo a integridade do projeto lógico. 
+
+### Novos conceitos aprendidos:
+Ao realizar a modelagem do projeto lógico, me deparei com uma série de elementos e conceitos anteriormente desconhecidos e que consequentemente me forçaram a aprender e entender sobre eles, de forma a consultar documentos, video-aulas e diversos blogs, afim de sanar as mais diversas dúvidas recorrentes, com por exemplos sobre os seguintes elementos:
+
+- __Auto relacionamento de uma tabela:__ Utilizado para definir um campo em uma tabela cujo sua chave estrangeira(FK) ao invés de referênciar a chave primária(PK) de outra tabela, referência e extrai dados da chave primária da própria tabela em que está inserida.
+
+- __Alternate Key(AK):__ Alternate Key ou Chave única é como se ela fosse ,assim com uma chave primária, um identificador para aquela tabela respeitando parâmetros um pouco mais flexíveis, podendo ser um campo null por exemplo.
+
+- __Tipos de relacionamento:__ Relacionamento identificado expressa uma relação entre tabelas, onde a chave estrangeira faz parte da chave primária daquela tabela, ou seja, faz parte da identificação da mesma gerando uma chave primária composta(PFK), enquanto o Relacionamento não-identificado não faz parte de uma chave primária.
+
+## Iniciando a criação do Script em SQL para implementar o modelo lógico construido aos SGBDs Postgresql e MySqls
 
 . Postgres oferece mais funcionalidades e uma melhor organização para o ambiente corporativo.
 
-## Iniciando a criação do Script em SQL para implementar o modelo lógico construido aos SGBDs Postgresql e MySqls
