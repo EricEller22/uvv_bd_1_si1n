@@ -2,9 +2,8 @@
 
 -- Script para implementação do banco de dados hr ao SGBD Postgresql
 
+
 -- String para a criação do usuário e suas respectivas permissões
-
-
 create role eric with 
 createdb 
 createrole;
