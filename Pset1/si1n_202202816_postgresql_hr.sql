@@ -140,7 +140,7 @@ CREATE TABLE empregados (
                 id_cargo VARCHAR(10) NOT NULL,
                 salario NUMERIC(8,2),
                 comissao NUMERIC(4,2),
-                id_departamento INTEGER NULL,
+                id_departamento INTEGER NOT NULL,
                 id_supervisor INTEGER NULL,
                 CONSTRAINT id_empregado_pk PRIMARY KEY (id_empregado)
 );
