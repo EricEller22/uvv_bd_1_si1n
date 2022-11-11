@@ -1,3 +1,7 @@
+-- Aluno:Eric Andrade Eller.  Turma:si1n.  Profº: Abrantes Araújo silva FIlho.
+
+-- Script para implementação do banco de dados hr ao SGBD MySql
+
 
 -- String para criar um usuário especifico
 CREATE USER eric identified by 'raiz';
