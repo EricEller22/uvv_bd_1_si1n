@@ -24,7 +24,7 @@ COMMENT ON DATABASE UVV
     IS 'Banco de dados utilizado para a implementação do banco de dados HR proposto no Pset1 ';
    
 -- Conecta ao banco de dados
-\c uvv;   
+\c "dbname=uvv user=eric password=computacao@raiz"
 
 -- String para criar o esquema 'hr' e dar autorização para o usuario 'eric'
 CREATE SCHEMA IF NOT EXISTS hr AUTHORIZATION eric;
