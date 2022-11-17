@@ -5,6 +5,8 @@
 
 -- String para a criação do usuário e suas respectivas permissões
 create role eric with 
+login
+encrypted password 'computacao@raiz'
 createdb 
 createrole;
 
@@ -22,8 +24,13 @@ CREATE DATABASE UVV
 -- String para comentar o banco de dados criado
 COMMENT ON DATABASE UVV
     IS 'Banco de dados utilizado para a implementação do banco de dados HR proposto no Pset1 ';
+
+-- String para conceder privilégios ao usuário
+grant all on database uvv to eric;
+alter default privileges
+grant all on tables to eric;
    
--- Conecta ao banco de dados
+-- Conecta ao banco de dados com o usuário
 \c "dbname=uvv user=eric password=computacao@raiz"
 
 -- String para criar o esquema 'hr' e dar autorização para o usuario 'eric'
